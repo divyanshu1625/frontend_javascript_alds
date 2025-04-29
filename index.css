@@ -16,9 +16,10 @@ body {
   background-color: #7C877F;
   color: white;
   text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
+  padding: 1.05rem 1.5rem;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1em;
   transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
@@ -27,10 +28,11 @@ body {
 .cta-button-2 {
   background-color: white;
   color: #7C877F;
-  text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1em;
+  text-decoration: none;
+  padding: 1.0rem 1.5rem;
   transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
