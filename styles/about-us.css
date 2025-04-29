@@ -1,0 +1,273 @@
+
+
+
+/* About section container */
+.about-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    color: black;
+}
+
+/* Left side with images */
+.about-images {
+    flex: 1;
+    position: relative;
+    padding-right: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.secondary-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Experience badge */
+.experience-badge {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(128, 140, 132, 0.9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 10px;
+}
+
+.experience-badge h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+.experience-badge p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Decorative dots */
+.decorative-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Right side content */
+.about-content {
+    flex: 1;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Feedback indicator */
+.feedback-indicator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(128, 140, 132, 0.9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.feedback-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(-90deg) translateX(-50%);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(128, 140, 132, 1);
+}
+
+/* About content styles */
+.about-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgba(128, 140, 132, 1);
+}
+
+.about-label::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: rgba(128, 140, 132, 1);
+    margin-right: 10px;
+}
+
+.about-heading {
+    margin-bottom: 30px;
+}
+
+.about-heading h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.about-heading .subheading {
+    font-size: 42px;
+    color: rgba(128, 140, 132, 0.8);
+    font-weight: normal;
+}
+
+.about-description {
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Features list */
+.features-list {
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-icon {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(128, 140, 132, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.feature-icon svg {
+    width: 14px;
+    height: 14px;
+    fill: rgba(128, 140, 132, 1);
+}
+
+
+
+/* Contact info */
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(128, 140, 132, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: rgba(128, 140, 132, 1);
+}
+
+.contact-details h4 {
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+}
+
+.contact-details p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Founder info */
+.founder-info {
+    display: flex;
+    align-items: center;
+}
+
+.founder-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.founder-details h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.founder-details p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-images, .about-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-content {
+        margin-top: 40px;
+    }
+
+    .feedback-indicator {
+        left: auto;
+        right: 20px;
+        top: 20px;
+        transform: none;
+    }
+
+    .feedback-text {
+        display: none;
+    }
+}

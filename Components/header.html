@@ -2,51 +2,95 @@
   <div class="parallax-bg"></div>
 
   <header>
-    <div class="logo-container">
-      <svg class="logo" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M25 5L5 15v20l20 10 20-10V15L25 5z"
-          fill="none"
-          stroke="white"
-          stroke-width="1.5"
-        />
-        <path
-          d="M25 15L10 22.5v15L25 45l15-7.5v-15L25 15z"
-          fill="none"
-          stroke="white"
-          stroke-width="1.5"
-        />
-        <path
-          d="M25 25L15 30v10l10 5 10-5V30L25 25z"
-          fill="none"
-          stroke="white"
-          stroke-width="1.5"
-        />
-      </svg>
-      <h1>Inspaire</h1>
+    <div class="header-main">
+      <div class="logo-container">
+        <svg
+          class="logo"
+          viewBox="0 0 50 50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25 5L5 15v20l20 10 20-10V15L25 5z"
+            fill="none"
+            stroke="white"
+            stroke-width="1.5"
+          />
+          <path
+            d="M25 15L10 22.5v15L25 45l15-7.5v-15L25 15z"
+            fill="none"
+            stroke="white"
+            stroke-width="1.5"
+          />
+          <path
+            d="M25 25L15 30v10l10 5 10-5V30L25 25z"
+            fill="none"
+            stroke="white"
+            stroke-width="1.5"
+          />
+        </svg>
+        <h1>Inspaire</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="active"
+              >Home
+              <span class="dropdown-arrow" aria-hidden="true">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg> </span
+            ></a>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+          <li>
+            <a href="#"
+              >Pages
+
+              <span class="dropdown-arrow" aria-hidden="true">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="cta-button"
+        >Get In Touch <span class="arrow">→</span></a
+      >
     </div>
-
-    <nav>
-      <ul>
-        <li>
-          <a href="#" class="active"
-            >Home <span class="dropdown-arrow">▼</span></a
-          >
-        </li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
-        <li>
-          <a href="#">Pages <span class="dropdown-arrow">▼</span></a>
-        </li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <a href="#" class="cta-button">Get In Touch <span class="arrow">→</span></a>
+    <hr class="header-divider" />
   </header>
-
   <main>
     <section class="hero">
       <div class="tag-line">
@@ -57,10 +101,14 @@
         We specialize in creating personalized, functional, and stylish<br />interiors
         that reflect your unique vision.
       </p>
-       <div class="hero-buttons">
-        <a href="#" class="cta-button">Explore More<span class="arrow">→</span></a>
-        <a href="#" class="cta-button-2">View Projects<span class="arrow">→</span></a>
-       </div>
+      <div class="hero-buttons">
+        <a href="#" class="cta-button"
+          >Explore More<span class="arrow">→</span></a
+        >
+        <a href="#" class="cta-button-2"
+          >View Projects<span class="arrow">→</span></a
+        >
+      </div>
     </section>
   </main>
 </div>

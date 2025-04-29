@@ -39,6 +39,10 @@ async function loadHTML(id, file, scriptFile = null, loadedScripts = new Set()) 
       html: "Components/header.html",
       js: "index.js",
     },
+    about_us: {
+      html: "Components/about-us.html",
+      js: "index.js",
+    },
     footer: {
       html: "Components/footer.html",
       js: "index.js",
